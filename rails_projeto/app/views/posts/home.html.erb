@@ -1,0 +1,20 @@
+
+
+<%-# link_to 'Sign up', new_user_registration_path %>
+
+
+	<div class="home-esquerdo">
+  			<div class="alinha-elementos">
+  			    <h1>Bem Vindo </h1>
+			</div>
+  		</div>
+  		<div class="home-direito">
+  			<div class="alinha-home-direito">
+  				<%= link_to image_tag("logo/bloodicon.png"), root_path %>
+	  			<h1>Veja as campanhas que estão acontecendo agora</h1>
+	  			<div class="">
+	  			    <a class="loginHome" data-text =  <%= link_to 'Publicações', posts_path %></a>
+					<a class="cadastroHome" data-text = <%= link_to 'Sair', destroy_user_session_path, method: :delete %></a>
+				</div>
+			</div>
+  		</div>

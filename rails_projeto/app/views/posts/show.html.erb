@@ -1,23 +1,36 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Paciente:</strong>
-  <%= @post.paciente %>
-</p>
 
-<p>
-  <strong>Hospital:</strong>
-  <%= @post.hospital %>
-</p>
 
-<p>
-  <strong>Tipo sangue:</strong>
-  <%= @post.tipo_sangue %>
-</p>
 
-<p>
-  <strong>User:</strong>
-  <%= @post.user.username %>
-</p>
-
-<%= link_to 'Back', posts_path %>
+<div class="caixaandshadow">
+			<div class="principal">
+				<div class="container-login">
+	        <p id="notice"><%= notice %></p>
+            
+            <p>
+              <strong>Paciente:</strong>
+              <%= @post.paciente %>
+            </p>
+            
+            <p>
+              <strong>Hospital:</strong>
+              <%= @post.hospital %>
+            </p>
+            
+            <p>
+              <strong>Tipo sangue:</strong>
+              <%= @post.tipo_sangue %>
+            </p>
+            
+            <p>
+              <strong>User:</strong>
+              <%= @post.user.username %>
+            </p>
+            <%= link_to 'Back', posts_path %>
+            
+        	</div>
+          <div class="container-img-login">
+    					<%= link_to image_tag("logo/doe-sangue.jpg"), root_path %>
+    			</div>
+    	  </div>
+</div>

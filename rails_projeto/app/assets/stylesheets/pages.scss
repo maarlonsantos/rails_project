@@ -1,3 +1,313 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+ body{
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: rgba(255, 153, 153,.2); /* tem que esclher uma cor pra isso aqui, blz? */
+}
+
+.fa-inverse, .fa-stack-5x{
+	font-size: 50px;
+}
+
+.fa-stack{
+	margin: 3vh;
+}
+
+
+#login{
+	text-align: center;
+}
+
+#login h1{
+		color: #ef3c3c;
+		margin: 0px 0px 10px 0px;
+}
+
+#login img{
+		width: 50px;
+}
+
+.principal{
+	height: 85vh;
+	width: 85vw;
+}
+
+.caixaandshadow{
+	position: absolute;
+  background: #ffffff;
+  margin-top: 7.5vh;
+  margin-left: 7.5vw;
+ -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.26);
+-moz-box-shadow:    0px 0px 14px 0px rgba(0, 0, 0, 0.26);
+box-shadow:         0px 0px 14px 0px rgba(0, 0, 0, 0.26);
+  border-radius:20px;
+  text-align: center;
+}
+
+.item img{
+  height: 20%;
+}
+
+.container-img-login{
+    height: 85vh;
+    width: 73%;
+    color: #ef3c3c;
+	  float: right;
+
+}
+
+.container-img-login img{
+  width: 100%;
+  height: 85vh;
+  border-radius: 0 20px 20px 0;
+}
+
+.container-login{
+    width: 27%;
+    display: inline;
+    float: left;
+    
+}
+
+form{
+	padding: 70px 20px 10px 20px;
+	margin: 0 auto;
+}
+
+/* tags a */
+
+.OthersInfos a{
+  color: gray;
+}
+
+.cadastroHome{
+  background-color: #ef3c3c;
+  color: white;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 90%;
+}
+.loginHome{
+  border: 2px solid #ef3c3c;
+  color: #ef3c3c;
+  padding: 9px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 90%;
+}
+
+.OthersInfos a:hover{
+  color: #428bca;  
+}
+
+.cadastroHome:hover{
+  background-color: #d83837; 
+}  
+
+.loginHome:hover{
+  background-color: rgba(255, 153, 153,.3); 
+}  
+
+.alinha-home-direito img{
+  width: 100px; 
+}
+
+
+/* Font Awesome e input estilo */
+
+.enviar input{
+
+  font-size: 18px;
+}
+
+.enviar input:hover{
+  background-color: #d83837; 
+}
+
+.container-login input {
+  width: 100%;
+  border: 2px solid #ef3c3c;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  height: 40px;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  min-width: 150px;
+}
+
+input:focus {
+  border-color: #ef3c3c;
+  box-shadow: 0 0 20px 0 #ef3c3c;
+}
+
+.inputWithIcon input {
+  padding-left: 40px;
+  
+}
+
+.inputWithIcon {
+  position: relative;
+}
+
+.inputWithIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+
+.inputWithIcon.inputIconBg i {
+  background-color: #ef3c3c;
+  color: #fff;
+  height: 16px;
+  padding: 12px 4px;
+  border-radius: 4px 0 0 4px;
+}
+
+.inputWithIcon.inputIconBg :focus + i {
+  color: #fff;
+  background-color: #ef3c3c;
+}
+
+.enviar{
+	margin: 0 auto;
+}
+
+.enviar input{
+	background: #ef3c3c;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 1px solid  #ef3c3c;
+	color: white;
+	cursor: pointer;
+	margin: 0;
+}
+
+/* radio button cad */
+
+.cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+.visa{background-image: url(../img/enterprise.png);}
+.mastercard{background-image:url(../img/user.png);}
+
+.drinkcard-cc, .cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.drinkcard-cc, .cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:93px;height:70px;
+    border: 3px solid black;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(0.8) grayscale(3) opacity(.7);
+       -moz-filter: brightness(0.8) grayscale(3) opacity(.7);
+            filter: brightness(0.8) grayscale(3) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+/* Extras */
+
+* { font-family:monospace; max-width: 100%;}
+
+.home-esquerdo{
+  background-image: linear-gradient(to right bottom, #ef3c3c, #f24c4a, #f45b58, #f66866, #f77573, #f77573, #f77573, #f77573, #f66866, #f45b58, #f24c4a, #ef3c3c);
+  width:50%;
+  height: 100vh;
+  float: left;
+}
+
+.home-direito{
+  width:50%;
+  height: 100vh;
+  float: right;
+  text-align: center;
+  color: #ef3c3c;
+}
+
+.home-esquerdo img{
+  display: inline;
+  float:left;
+  
+}
+
+.alinha-elementos{
+  padding: 25% 0 0 0%;
+  color:white;
+  font-size: 40px;
+  text-align:center;
+}
+
+.centralizar-img-text{
+  height: 10vh;
+  margin-bottom: 10%;
+}
+
+.centralizar-img-text p{
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+.alinha-home-direito{
+  margin: 22% 15% 25% 15%;
+}
+
+.teste{
+
+position: absolute;
+  background: #ffffff;
+  margin-top: 4vh;
+  border-radius: 5px;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  background-color: white;
+  width: 50vw;
+  height: 60vh;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.26);
+-moz-box-shadow:    0px 0px 6px 0px rgba(0, 0, 0, 0.26);
+box-shadow:         0px 0px 6px 0px rgba(0, 0, 0, 0.26);
+  
+}
+
+#user_remember_me{
+  height: 15px;
+  display: inline;
+  
+}
